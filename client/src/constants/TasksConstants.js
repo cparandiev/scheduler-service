@@ -5,7 +5,9 @@ export const TASK_URLS = {
 }
 
 export const TASK_ACTIONS = {
-    GET_ALL: 'GET_ALL_ACTIONS',
-    GET_ALL_FULFILLED: 'GET_ALL_ACTIONS_FULFILLED',
-    GET_ALL_REJECTED: 'GET_ALL_ACTIONS_REJECTED'
+    GET_ALL:{
+        ACTION: 'GET_ALL_ACTIONS',
+        FULFILLED: `${this.ACTION}_FULFILLED`,
+        REJECTED: `${this.ACTION}_REJECTED`
+    },
 }

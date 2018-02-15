@@ -6,7 +6,7 @@ const initialState = {
 
 export default (state = initialState, { type, payload }) => {
     switch (type) {
-        case TASK_ACTIONS.GET_ALL_FULFILLED: {
+        case TASK_ACTIONS.GET_ALL.FULFILLED: {
             return {
                 tasks: [...payload]
             }
