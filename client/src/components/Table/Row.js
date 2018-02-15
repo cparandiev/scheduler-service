@@ -4,7 +4,7 @@ const Row = ({data, rowSchema}) => {
   let index = 0;
 
   let tds = rowSchema
-    .map((item) => ( data[item.propName] ? 
+    .map((item) => ( data[item.propName] !== undefined ? 
       (<td key={index++}>
         {item.renderFunction(data[item.propName])}
       </td>) : 

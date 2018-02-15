@@ -3,7 +3,7 @@ import React from 'react';
 const Text = (className) => (text) => {
   return (
     <div className={className}>
-        {text}
+        {text.toString()}
     </div>
   );
 };
