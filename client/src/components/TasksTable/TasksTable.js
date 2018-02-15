@@ -51,42 +51,34 @@ const tasksTableColumnNames = [
     "Actions"
   ];
 
-const actions = { actions: [{
-    label: "clickMeLabel",
-    onClickHandler: (e) => {
-        console.log('Clicked Action');
-    },
-    className: "glyphicon glyphicon-ok green"
-    },{
-    label: "clickMeLabel2",
-    onClickHandler: () => {
-        console.log('Clicked Action');
-    },
-    className: "glyphicon glyphicon-check white"
-    },{
-    label: "clickMeLabel3",
-    onClickHandler: () => {
-        console.log('Clicked Action');
-    },
-    className: "glyphicon glyphicon-play green"
-    },{
-    label: "clickMeLabel3",
-    onClickHandler: () => {
-        console.log('Clicked Action');
-    },
-    className: "glyphicon glyphicon-trash red"
-    },{
-    label: "clickMeLabel3",
-    onClickHandler: () => {
-        console.log('Clicked Action');
-    },
-    className: "glyphicon glyphicon glyphicon-list-alt"
-    }]
-};
+const createActions = (handlers) => ( {actions: [{
+  label: "Activate",
+  onClickHandler: () => handlers["activate"](),
+  className: "glyphicon glyphicon-ok green"
+  },{
+  label: "Edit",
+  onClickHandler: () => handlers["edit"](),
+  className: "glyphicon glyphicon-check white"
+  },{
+  label: "Run",
+  onClickHandler: () => handlers["run"](),
+  className: "glyphicon glyphicon-play green"
+  },{
+  label: "Delete",
+  onClickHandler: () => handlers["delete"](),
+  className: "glyphicon glyphicon-trash red"
+  },{
+  label: "View Page",
+  onClickHandler: () => handlers["view"](),
+  className: "glyphicon glyphicon glyphicon-list-alt"
+}]});
 
-const TasksTable = ({items}) => {
 
-  items = items.map((item) => Object.assign(item, actions)); 
+
+
+const TasksTable = ({items, handlers}) => {
+
+  items = items.map((item) => Object.assign(item, createActions(handlers))); 
 
   return (
     <div>
