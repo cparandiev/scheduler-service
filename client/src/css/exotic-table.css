@@ -1,0 +1,164 @@
+#logo-img {
+    margin-left: 250px;
+    margin-top: 20px;
+    margin-right: 0px;
+    width: 50%;
+  }
+  
+  body {
+    /*background:#121212;*/
+    font-family: sans-serif;
+    color: #ccc;
+    padding: 15px
+  }
+  
+  .table>thead>tr>th {
+    border-bottom: none;
+  }
+  
+  .exotic-table {
+    color: #fff;
+    background: #191919;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 28px;
+  }
+  
+  .exotic-table thead tr {
+    border: 2px #333 outset;
+    text-align: center;
+  }
+  
+  .exotic-table thead>tr>th {
+    text-align: center;
+  }
+  
+  .exotic-table tbody {
+    border: 2px outset #333;
+    border-top: none
+  }
+  
+  .exotic-table tbody tr {
+    background: #222;
+  }
+  
+  .exotic-table tbody tr:hover {
+    box-shadow: 0 0 20px #000;
+    background: #1a1a1a;
+  }
+  
+  .exotic-table tbody tr td {
+    border-bottom: 2px outset #333;
+  }
+  
+  .main-table {
+    border: none;
+    margin-top: 20px;
+  }
+  
+  .popover {
+    color: #000
+  }
+  
+  a.td-price {
+    color: #fff;
+    border-bottom: 1px dotted #ccc
+  }
+  
+  .green {
+    color: #47e900
+  }
+  
+  .red {
+    color: #f00808
+  }
+  
+  .paleyellow {
+    color: #f8d97c
+  }
+  
+  .purple {
+    color: #b461ff
+  }
+  
+  .turquoise {
+    color: #52edff
+  }
+  
+  #schedule-task-btn {
+    margin-top: 10px;
+    background-color: rgb(241, 103, 37);
+    border-color: white;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 5px 16px;
+    margin: auto 4px;
+    letter-spacing: .007px;
+    display: flex;
+  }
+  
+  #time-period-input {
+    width: 220px;
+  }
+  
+  .modal-content {
+    background-color: black;
+    border-color: white;
+    color: white;
+  }
+  
+  .set-active-status-btn, .edit-task-btn, .delete-task-btn, .run-task-btn, .redirect-to-page-btn {
+    margin-left: 15px;
+  }
+  
+  #scheduled-tasks-table-actions {
+    width: 212px;
+  }
+  
+  .last-executed-date {
+    width: 50px;
+  }
+  
+  /* table.table-bordered > thead > tr > th{
+      border:2px solid black;
+  }
+  table.table-bordered > tbody > tr > td{
+      border:2px solid black;
+  } */
+  
+  .hiddenRow {
+    padding: 0 !important;
+  }
+  
+  .accordian-body tbody tr {
+    background-color: #653434;
+  }
+  
+  .accordian-body thead tr {
+    background-color: black;
+  }
+  
+  .bootstrap-datetimepicker-widget {
+    color: black;
+  }
+  
+  #greeting-message {
+    color: white;
+    font-style: italic;
+    margin-top: 44px;
+  }
+  
+  .date-time-form-group {
+    margin-bottom: 10px;
+  }
+  
+  .input-group-addon {
+    background-color: white;
+    border-color: white;
+  }
+  
+  .redirect-to-page-btn {
+    color: #12bff7;
+  }
+  

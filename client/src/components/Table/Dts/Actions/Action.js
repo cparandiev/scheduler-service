@@ -1,10 +1,15 @@
 import React from 'react';
 
-const Action = ({key, label, glyphicon, onClickHandler}) => {
+const onClickHandlerWithStopPropagation = (onClickHandler) => (e) => {
+  e.stopPropagation();
+  e.nativeEvent.stopImmediatePropagation();
+  onClickHandler(e);
+}
+
+const Action = ({key, label, className, onClickHandler, style}) => {
+  
   return (
-    <span key={key} title={label} className={glyphicon} onClick={onClickHandler}>
-      label
-    </span>
+    <span key={key} title={label} className={className} onClick={onClickHandlerWithStopPropagation(onClickHandler)} style={style} />
   );
 };
 

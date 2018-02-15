@@ -1,10 +1,10 @@
 import React from 'react';
 import Action from './Action';
 
-const Actions = (actions) => {
+const Actions = (style) => (actions) => {
     let index = 0;
 
-    let actionsTds = actions.map((action) => Action(Object.assign({key: index++}, action)));
+    let actionsTds = actions.map((action) => Action(Object.assign({key: index++, style}, action)));
 
     return actionsTds;
 };
