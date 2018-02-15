@@ -8,7 +8,7 @@ const UpsertTaskDialog = ({ task, onClickHandler, closeOnClickHandler, show }) =
         const title = task ? 'Update task' : 'Create new task';   
         const body = (<UpsertTaskForm task={task || {}} />)
         const buttons = (<div>    
-                            <Button bsStyle='primary' onClick={onClickHandler}>Add</Button>
+                            <Button bsStyle='warning' onClick={onClickHandler}>Add</Button>
                             <Button onClick={closeOnClickHandler}>Close</Button>
                         </div>);
 

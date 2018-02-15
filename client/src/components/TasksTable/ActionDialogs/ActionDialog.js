@@ -1,7 +1,8 @@
 import React from 'react';
-import { Dialog } from './Dialog';
+import { Button } from 'react-bootstrap'
+import { Dialog } from '../../Common/Dialog';
 
-export default ({title, show, closeOnClickHandler, onClickHandler}) => 
+export default ({title, show, closeOnClickHandler, onClickHandler}) => {
     const buttons = (<div>    
                         <Button bsStyle='primary' onClick={onClickHandler}>Yes</Button>
                         <Button onClick={closeOnClickHandler}>No</Button>

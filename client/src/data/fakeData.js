@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 const tasks = [
     {
         id: 1,
-        name: "Test2",
+        name: "Test4",
         startTime: "2017-11-07T17:55:00",
         timePeriod: {
           "value": 10,
