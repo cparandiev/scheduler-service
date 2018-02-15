@@ -53,23 +53,23 @@ const tasksTableColumnNames = [
 
 const createActions = (handlers) => ( {actions: [{
   label: "Activate",
-  onClickHandler: handlers["activate"],
+  onClickHandler: () => handlers["activate"](),
   className: "glyphicon glyphicon-ok green"
   },{
   label: "Edit",
-  onClickHandler: handlers["edit"],
+  onClickHandler: () => handlers["edit"](),
   className: "glyphicon glyphicon-check white"
   },{
   label: "Run",
-  onClickHandler: handlers["run"],
+  onClickHandler: () => handlers["run"](),
   className: "glyphicon glyphicon-play green"
   },{
   label: "Delete",
-  onClickHandler: handlers["delete"],
+  onClickHandler: () => handlers["delete"](),
   className: "glyphicon glyphicon-trash red"
   },{
   label: "View Page",
-  onClickHandler: handlers["view"],
+  onClickHandler: () => handlers["view"](),
   className: "glyphicon glyphicon glyphicon-list-alt"
 }]});
 
