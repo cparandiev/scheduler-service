@@ -87,7 +87,7 @@ const TasksTable = ({items, handlers}) => {
           rowSchema={tasksTablerowSchema}
           columnNames={tasksTableColumnNames}
           classNameTbl={"table exotic-table"}
-          classNameRow={"tableRow accordion-toggle"}
+          classNameRow={"tableRow"}
           onClickedRowHandler={() => console.log("Clicked Row")}
       />
     </div>
