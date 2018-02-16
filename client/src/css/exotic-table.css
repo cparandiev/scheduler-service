@@ -103,7 +103,7 @@
   }
   
   .modal-content {
-    background-color: black;
+    background-color: #222 !important;
     border-color: white;
     color: white;
   }

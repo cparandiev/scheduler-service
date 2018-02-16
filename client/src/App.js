@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-        <Router />
+        <TasksTablePage />
       </div>
     );
   }
